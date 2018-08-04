@@ -10,65 +10,87 @@
 <!--     <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'> -->
   </head>
+
 <body>
-  <header style = "border: 1px solid red"></style>
+<!-- Begin header nav -->
+  <header>
     <nav id="header-nav" class="navbar navbar-default">
-      <div class="container" style = "border: 1px solid green"></style>
-        <div class="navbar-header">
-          <h1 id="header-nav-title" style = "border: 1px solid red"></style>ARCANAS</h1>
+      <div class="container-fluid">
+        <div class="row">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <!-- Creates nav button when window is small using an event listener -->
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <!-- brand title of page -->
+            <a class="navbar-brand" href="#">ARCANAS</a>
+          </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">History</a></li>
+              <li><a href="#">How to Use</a></li>
+              <li><a href="#">List of Cards</a></li>
+              <li><a href="#">About</a></li>
+            </ul>
+          </div>
         </div>
-        
-        <div id="collapsable-nav" class="collapse navbar-collapse">
-           <ul id="nav-list" class="nav navbar-nav navbar-right" style = "border: 1px solid red"></style>
-             <li id="navButton">
-              <a href="#" class="hidden-xs">History</a>
-            </li>
-            <li id="navButton">
-              <a href="#" class="hidden-xs">How to Use</a>
-            </li>
-            <li id="navButton">
-              <a href="#" class="hidden-xs">List of Cards</a>
-            </li>
-             <li id="navButton">
-               <a href="#" class="hidden-xs">About</a>
-            </li>
-          </ul><!-- #nav-list -->
-        </div><!-- .collapse .navbar-collapse -->
-      </div><!-- .container -->
-    </nav><!-- #header-nav -->
+      </div>
+    </nav>
   </header>
+<!-- End header nav -->
 
+<!-- Begin main content -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="jumbotron bg-dark">
+        <div id="jumbotron-content" class="container text-center">  
+          <p>A simple, modern Tarot card generator</p>
+          <h1>Discover your Tarot card of the day</h1>
+          <button type="button" class="btn btn-default btn-lg">generate card</button>
+        </div>
+      </div>
+    </div>
 
-  <div id="main-content" class="section section-dark">
-    <div class="container">
-      <h1>Header 1</h1>
+    <div class="row">
+      <div class="section bg-light">
+        <div class="container">  
+          <h1>History</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="section bg-dark">
+        <div class="container">
+          <h1>Modern Uses</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="section bg-light">
+        <div class="container"">
+          <h1>Try it</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="row">
+      <footer class="panel-footer">
+        <div class="container">
+          <div class="text-center">created by ashhio on github &copy; 2018
+            <br> for entertainment purposes only</div>
+        </div>
+      </footer>
     </div>
   </div>
-
-  <div id="history" class="section section-light">
-    <div class="container">
-      <h1>History</h1>
-    </div>
-  </div>
-
-  <div id="modern-uses" class="section section-dark">
-    <div class="container"">
-      <h1>Modern Uses</h1>
-    </div>
-  </div>
-
-  <div id="try-it" class="section section-light">
-    <div class="container"">
-      <h1>Try it</h1>
-    </div>
-  </div>
-
-  <footer class="panel-footer">
-    <div class="container">
-      <div class="text-center">created by ashhio on github &copy; 2018
-        <br> for entertainment purposes only</div>
-    </div>
-  </footer>
+  <!-- End main content -->
 
   <!-- jQuery (Bootstrap JS plugins depend on it) -->
   <script src="js/jquery-2.1.4.min.js"></script>
