@@ -1,15 +1,17 @@
 body {
-  font-size: 16px;
-  color: #fff;
-  background-color: #281E2B;
+  background-color: green;
   font-family: 'Avenir', sans-serif;
 }
 
 h1{
   font-family: 'Avenir Next', sans-serif;
   font-size: 46px;
+  text-align: center;
 }
 
+p{
+  font-size: 28px;
+}
 
 /** HEADER **/
 #header-nav {
@@ -18,10 +20,24 @@ h1{
   margin-bottom: 0px;
 }
 
-.navbar-brand{
-  font-size: 32px;
-  color: #977B91;
+.navbar-default .navbar-nav li a{
+  font-size: 16px;
+  color: #795772;
 }
+
+.navbar-default .navbar-nav a:hover {
+  color: #281E2B;
+}
+
+.navbar-default .navbar-brand{
+  font-size: 32px;
+  color: #795772;
+}
+
+.navbar-default .navbar-brand:hover {
+  color: #281E2B;
+}
+
 /* END HEADER */
 
 
@@ -32,17 +48,65 @@ h1{
   margin-top: 100px;
 }
 
+#card-graphic img{
+  height: 450px;
+/*  float: left;*/
+/*  margin-right: 35px;
+  margin-left: 15px;*/
+
+}
+
+.container-fluid .jumbotron{
+  margin-bottom: 0px;
+  border-radius: 0;
+}
+
 .jumbotron h1{
   font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.jumbotron p{
+  font-size: 28px;
 }
 
 .bg-dark{
-  background-color: #281E2B;
+  /*background-color: #281E2B;*/
+  background-image: url("../images/arcanas_bgpattern_test7.png");
   color: #F6F2F1;
 }
 .bg-light{
   background-color: #F6F2F1;
   color: #795772;
+}
+
+.btn-custom{
+  color: #795772;
+  background-color: #F6F2F1;
+  border-color: #795772;
+}
+
+
+.btn-custom:hover{
+  color: #795772;
+  background-color: #FFFFFF;
+  border-color: #795772;
+}
+
+.btn-custom:active{
+  color: #F6F2F1;
+  background-color: #795772;
+  border-color: #795772;
+}
+
+.btn-lg{
+  padding: 20px 32px;
+  font-size: 22px;
+
+}
+
+.section{
+  padding-top:50px;
 }
 /* END HOME PAGE */
 
@@ -50,6 +114,7 @@ h1{
 /* FOOTER */
 .panel-footer {
   background-color: #281E2B;
+  color: #795772;
   height:125px;
   padding-top:50px;
 }
@@ -72,8 +137,12 @@ h1{
 
 .section, .jumbotron {
    /* background: url('../images/jumbotron_1200.jpg') no-repeat;*/
-    height: 652px; 
+    min-height: 550px; 
 
+  }
+
+  .small-section{
+    min-height: 250px;
   }
 }
 
@@ -95,7 +164,7 @@ h1{
   /* Home Page */
   .section, .jumbotron {
    /* background: url('../images/jumbotron_992.jpg') no-repeat;*/
-    height: 558px;
+    min-height: 550px;
   }
   /* End Home Page */
 }
@@ -110,7 +179,7 @@ h1{
   /* Home Page */
   .section, .jumbotron {
    /* background: url('../images/jumbotron_768.jpg') no-repeat;*/
-    height: 432px;
+     min-height: 432px;
   }
   /* End Home Page */
 }
@@ -120,7 +189,7 @@ h1{
   /* Header */
  /* Home Page */ 
   .section, .jumbotron {
-    height: 432px;
+    min-height: 432px;
   }
 
 }
@@ -134,7 +203,7 @@ h1{
   
   /* Home page */
    .section, .jumbotron {
-    height: 432px;
+    min-height: 432px;
   }
   .col-xxs-12 {
     position: relative;
