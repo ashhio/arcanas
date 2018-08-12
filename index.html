@@ -7,8 +7,7 @@
     <title>arcanas</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel='stylesheet' href="fonts/Avenir.ttc" type='text/css'>
-    <link rel='stylesheet' href="fonts/Avenir%20Next.ttc" type='text/css'> 
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet"> 
   </head>
 
 <body>
@@ -50,7 +49,7 @@
       <div class="jumbotron bg-dark">
         <div id="jumbotron-content" class="container text-center">  
           <p>A simple tarot card generator</p>
-          <h1 class="hidden-xs">Discover your tarot card of the day</h1>
+          <h1>Discover your tarot card of the day</h1>
             <button type="button" class="btn btn-custom btn-lg hidden-xs" onclick="Redirect()">generate card</button>
             <button type="button" class="btn btn-custom btn-md visible-xs" onclick="Redirect()">generate card</button>
         </div>
@@ -92,7 +91,8 @@
       <div class="section small-section bg-light">
         <div class="container text-center">
           <p>Try our Tarot card generator now, and we’ll guide you step-by-step on how to use your reading.</p>
-          <button type="button" class="btn btn-custom btn-lg">generate card</button>
+          <button type="button" class="btn btn-custom btn-lg hidden-xs" onclick="Redirect()">generate card</button>
+          <button type="button" class="btn btn-custom btn-md visible-xs" onclick="Redirect()">generate card</button>
         </div>
       </div>
     </div>
@@ -101,8 +101,10 @@
     <div class="row">
       <footer class="panel-footer">
         <div class="container">
-          <div class="text-center">created by ashhio on github &copy; 2018
-            <br> for entertainment purposes only</div>
+          <div class="text-center">
+            <p>created by ashhio on github &copy; 2018
+            <br> for entertainment purposes only</p>
+          </div>
         </div>
       </footer>
     </div>

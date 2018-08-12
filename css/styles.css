@@ -1,17 +1,18 @@
 body {
   background-color: #281E2B;
-  font-family: 'Avenir', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 h1{
-  font-family: 'Avenir Next', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   font-size: 46px;
   text-align: center;
 }
 
 p{
-  font-size: 28px;
+  font-size: 24px;
 }
+
 
 /** HEADER **/
 #header-nav {
@@ -22,40 +23,28 @@ p{
   padding-left: 10px;
 }
 
-.navbar-default .navbar-nav li a{
-  font-size: 16px;
-  color: #795772;
-}
-
-.navbar-default .navbar-nav a:hover {
-  color: #281E2B;
-}
-
 .navbar-default .navbar-brand{
   font-size: 32px;
   color: #795772;
 }
 
-.navbar-default .navbar-brand:hover {
-  color: #281E2B;
+.navbar-default .navbar-nav li a{
+  font-size: 16px;
+  color: #795772;
 }
 
+.navbar-default .navbar-nav a:hover, 
+.navbar-default .navbar-brand:hover{
+  color: #281E2B;
+}
 /* END HEADER */
 
 
-
 /* HOME PAGE */
-
-
-#card-graphic img{
-  height: 450px;
-}
-
 .container-fluid .jumbotron{
   margin-bottom: 0px;
   border-radius: 0;
 }
-
 .jumbotron h1{
   font-size: 60px;
   margin-bottom: 20px;
@@ -65,8 +54,12 @@ p{
   font-size: 28px;
 }
 
+.section{
+  padding-top:50px;
+  padding-bottom:50px;
+}
+
 .bg-dark{
-  /*background-color: #281E2B;*/
   background-image: url("../images/arcanas_bgpattern_test7.png");
   color: #F6F2F1;
 }
@@ -81,6 +74,16 @@ p{
   border-color: #795772;
 }
 
+.btn-lg{
+  padding: 20px 32px;
+  font-size: 22px;
+}
+
+.btn-md{
+  margin: 0 auto;
+  padding: 10px 22px;
+  font-size: 18px;
+}
 
 .btn-custom:hover{
   color: #795772;
@@ -94,20 +97,8 @@ p{
   border-color: #795772;
 }
 
-.btn-lg{
-  padding: 20px 32px;
-  font-size: 22px;
-
-}
-
-.btn-md{
-  margin: 0 auto;
-
-}
-
-.section{
-  padding-top:50px;
-  padding-bottom:50px;
+#card-graphic img{
+  height: 450px;
 }
 /* END HOME PAGE */
 
@@ -119,31 +110,34 @@ p{
   height:125px;
   padding-top:50px;
 }
+
+.panel-footer p{
+    font-size:14px;
+}
 /* END FOOTER */
-
-
-
 
 
 
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
-
-  #jumbotron-content{
-  margin-top:100px;
-}
-
+  /* Header */
   .navbar-brand{
     transform: translateX(-50%);
     left: 50%;
     position: absolute;
   }
 
+  /* Main content */
   .section, .jumbotron {
     min-height: 550px; 
   }
 
+  #jumbotron-content{
+    margin-top:100px;
+  }
+
+  /* Footer */
   .small-section{
     min-height: 250px;
   }
@@ -158,102 +152,90 @@ p{
     left: 50%;
     position: absolute;
   }
-  /* End Header */
 
-  /* Home Page */
-  
-#jumbotron-content{
-  margin-top:100px;
-}
-
+  /* Main content */
   .section, .jumbotron {
     min-height: 550px;
   }
 
+  #jumbotron-content{
+    margin-top:100px;
+  }
+
+  /* Footer */
   .small-section{
     min-height: 250px;
   }
-  /* End Home Page */
 }
-
-
 
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
-   /* Header */
- 
-
-  /* End Header */
-
-  /* Home Page */
-
-  #jumbotron-content{
-  margin-top:25px;
-}
-  .section, .jumbotron {
-   /* background: url('../images/jumbotron_768.jpg') no-repeat;*/
-     min-height: 432px;
-  }
-
-
-  .small-section{
-    min-height: 250px;
-  }
-  /* End Home Page */
-}
-
-/********** Extra small devices only **********/
-@media (max-width: 767px) {
-  /* Header */
- /* Home Page */ 
-
-   #jumbotron-content{
-  margin-top:25px;
-}
+  /* Main content */
   .section, .jumbotron {
     min-height: 432px;
   }
 
-    .small-section{
-    min-height: 250px;
+  #jumbotron-content{
+    margin-top:25px;
   }
 
+  /* Footer */
+  .small-section{
+    min-height: 250px;
+  }
+}
+
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Body content */
   h1
-{
-    font-size: 5vh;
-}
+  {
+    font-size: 5vw;
+  }
   p
-{
-    font-size: 3.2vh;
-}
+  {
+    font-size: 3.5vw;
+  }
+
+  /* Main content */ 
+  .jumbotron, .section{
+    min-height: 55vw;
+  }
+
+  #jumbotron-content{
+    margin-top:25px;
+  }
+
+  #jumbotron-content h1{
+    font-size: 7vw;
+  }
+
+  #jumbotron-content p{
+    font-size: 4vw;
+  }
+
+  /* Footer */
+  .small-section{
+    min-height:25vw;
+  }
 
 }
 
 
 /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
 @media (max-width: 479px) {
-  /* Header */
- 
-  /* End Header */
-  
-  /* Home page */
-   .section, .jumbotron {
-    min-height: 432px;
-  }
-  
-    .small-section{
-    min-height: 250px;
+  /* Main content */
+  .section{
+    padding-top:25px;
+    padding-bottom:25px;
   }
 
-    h1
-{
-    font-size: 5vh;
-}
-  p
-{
-    font-size: 3.2vh;
-}
+  /* Footer */
+  .panel-footer p{
+    font-size:3vw;
+  }
 }
 
 
