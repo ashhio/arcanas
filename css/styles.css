@@ -1,5 +1,5 @@
 body {
-  background-color: green;
+  background-color: #281E2B;
   font-family: 'Avenir', sans-serif;
 }
 
@@ -18,6 +18,8 @@ p{
   background-color: #F6F2F1;
   border-radius: 0;
   margin-bottom: 0px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .navbar-default .navbar-nav li a{
@@ -44,16 +46,9 @@ p{
 
 /* HOME PAGE */
 
-#jumbotron-content{
-  margin-top: 100px;
-}
 
 #card-graphic img{
   height: 450px;
-/*  float: left;*/
-/*  margin-right: 35px;
-  margin-left: 15px;*/
-
 }
 
 .container-fluid .jumbotron{
@@ -105,8 +100,14 @@ p{
 
 }
 
+.btn-md{
+  margin: 0 auto;
+
+}
+
 .section{
   padding-top:50px;
+  padding-bottom:50px;
 }
 /* END HOME PAGE */
 
@@ -129,16 +130,18 @@ p{
 /********** Large devices only **********/
 @media (min-width: 1200px) {
 
-.navbar-brand{
-  transform: translateX(-50%);
-  left: 50%;
-  position: absolute;
+  #jumbotron-content{
+  margin-top:100px;
 }
 
-.section, .jumbotron {
-   /* background: url('../images/jumbotron_1200.jpg') no-repeat;*/
-    min-height: 550px; 
+  .navbar-brand{
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+  }
 
+  .section, .jumbotron {
+    min-height: 550px; 
   }
 
   .small-section{
@@ -147,27 +150,34 @@ p{
 }
 
 
-
-
-
-
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
   /* Header */
-.navbar-brand{
-  transform: translateX(-50%);
-  left: 50%;
-  position: absolute;
-}
+  .navbar-brand{
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+  }
   /* End Header */
 
   /* Home Page */
+  
+#jumbotron-content{
+  margin-top:100px;
+}
+
   .section, .jumbotron {
-   /* background: url('../images/jumbotron_992.jpg') no-repeat;*/
     min-height: 550px;
+  }
+
+  .small-section{
+    min-height: 250px;
   }
   /* End Home Page */
 }
+
+
+
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
@@ -177,9 +187,18 @@ p{
   /* End Header */
 
   /* Home Page */
+
+  #jumbotron-content{
+  margin-top:25px;
+}
   .section, .jumbotron {
    /* background: url('../images/jumbotron_768.jpg') no-repeat;*/
      min-height: 432px;
+  }
+
+
+  .small-section{
+    min-height: 250px;
   }
   /* End Home Page */
 }
@@ -188,9 +207,26 @@ p{
 @media (max-width: 767px) {
   /* Header */
  /* Home Page */ 
+
+   #jumbotron-content{
+  margin-top:25px;
+}
   .section, .jumbotron {
     min-height: 432px;
   }
+
+    .small-section{
+    min-height: 250px;
+  }
+
+  h1
+{
+    font-size: 5vh;
+}
+  p
+{
+    font-size: 3.2vh;
+}
 
 }
 
@@ -205,14 +241,19 @@ p{
    .section, .jumbotron {
     min-height: 432px;
   }
-  .col-xxs-12 {
-    position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-    float: left;
-    width: 100%;
+  
+    .small-section{
+    min-height: 250px;
   }
+
+    h1
+{
+    font-size: 5vh;
+}
+  p
+{
+    font-size: 3.2vh;
+}
 }
 
 

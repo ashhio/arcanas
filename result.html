@@ -10,8 +10,7 @@
     <link rel='stylesheet' href="fonts/Avenir.ttc" type='text/css'>
     <link rel='stylesheet' href="fonts/Avenir%20Next.ttc" type='text/css'> 
   </head>
-
-<body>
+  <body>
 <!-- Begin header nav -->
   <header>
     <nav id="header-nav" class="navbar navbar-default">
@@ -27,7 +26,7 @@
               <span class="icon-bar"></span>
             </button>
             <!-- brand title of page -->
-            <a class="navbar-brand" href="index.html">ARCANAS</a>
+            <a class="navbar-brand" href="/index.html">ARCANAS</a>
           </div>
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-navbar-collapse">
@@ -49,55 +48,13 @@
     <div class="row">
       <div class="jumbotron bg-dark">
         <div id="jumbotron-content" class="container text-center">  
-          <p>A simple tarot card generator</p>
-          <h1 class="hidden-xs">Discover your tarot card of the day</h1>
-            <button type="button" class="btn btn-custom btn-lg hidden-xs" onclick="Redirect()">generate card</button>
-            <button type="button" class="btn btn-custom btn-md visible-xs" onclick="Redirect()">generate card</button>
+          <p>Your card is...</p>
+          <img id="generated-card" src="" alt="Your card">
         </div>
       </div>
     </div>
 
-    <div class="row">
-      <div class="section bg-light">
-        <div class="container"> 
-          <div class="col-md-4 col-sm-6 hidden-xs">
-           <div id="card-graphic">
-            <img src="images/card_0.png" alt="The Fool Tarot Card"></a>
-          </div>
-        </div>
-          <div class="col-md-8 col-sm-6">
-          <a name="History"></a> 
-          <h1>Ancient History</h1>
-            <p>The first recorded usage of the tarot pack was in 15th century Europe and was originally used to play card games. Some began to use tarot cards for occult purposes, and the deck was first used for divination in late 18th century France. 
-            <br>
-            <br>The pack consists of 78 cards that some say carries allegorical meaning.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="section bg-dark">
-        <div class="container">
-          <a name="Use"></a>
-          <h1>Modern Uses</h1>
-          <p>Tarot does not have to be something only so-called “mystics” use.
-          <br>
-          <br>In the modern day, Tarot can be a useful tool for self-discovery.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="section small-section bg-light">
-        <div class="container text-center">
-          <p>Try our Tarot card generator now, and we’ll guide you step-by-step on how to use your reading.</p>
-          <button type="button" class="btn btn-custom btn-lg">generate card</button>
-        </div>
-      </div>
-    </div>
-
-    <!-- Footer -->
+<!-- Footer -->
     <div class="row">
       <footer class="panel-footer">
         <div class="container">
@@ -109,10 +66,20 @@
   </div>
   <!-- End main content -->
 
-  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+    <!-- jQuery (Bootstrap JS plugins depend on it) -->
   <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/ajax-utils.js"></script>
   <script src="js/script.js"></script>
+  <script>generateCard();</script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
