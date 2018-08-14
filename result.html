@@ -7,8 +7,7 @@
     <title>arcanas</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel='stylesheet' href="fonts/Avenir.ttc" type='text/css'>
-    <link rel='stylesheet' href="fonts/Avenir%20Next.ttc" type='text/css'> 
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet"> 
   </head>
   <body>
 <!-- Begin header nav -->
@@ -26,7 +25,7 @@
               <span class="icon-bar"></span>
             </button>
             <!-- brand title of page -->
-            <a class="navbar-brand" href="/index.html">ARCANAS</a>
+            <a class="navbar-brand" href="index.html">ARCANAS</a>
           </div>
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-navbar-collapse">
@@ -46,10 +45,17 @@
 <!-- Begin main content -->
   <div class="container-fluid">
     <div class="row">
-      <div class="jumbotron bg-dark">
-        <div id="jumbotron-content" class="container text-center">  
-          <p>Your card is...</p>
-          <img id="generated-card" src="" alt="Your card">
+      <div class="section bg-dark">
+        <div class="container">  
+          <div class="col-xs-6 text-center">
+            <p>Your card is...</p>
+            <img id="generated-card" src="" alt="Your card">
+          </div>
+          <div class="col-xs-6">
+            <p class="text-center">Meanings:</p>
+            <br>
+            <div id="card-info"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -69,9 +75,8 @@
     <!-- jQuery (Bootstrap JS plugins depend on it) -->
   <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/ajax-utils.js"></script>
   <script src="js/script.js"></script>
-  <script>generateCard();</script>
+  <script>generateCard(); showCardInfo();</script>
 </body>
 </html>
 
