@@ -97,8 +97,22 @@ p{
   border-color: #795772;
 }
 
+.small-text{
+  font-size:20px;
+  color:#A583A5;
+}
+
 #card-graphic img{
   height: 450px;
+}
+
+#result-container{
+  background-color:#795772;
+  padding-top:50px;
+  padding-bottom:50px;
+  margin-left:50px;
+  border-width:1px;
+  border-radius:10px;
 }
 /* END HOME PAGE */
 
@@ -113,7 +127,7 @@ p{
 }
 
 .panel-footer p{
-    font-size:14px;
+  font-size:14px;
 }
 /* END FOOTER */
 
