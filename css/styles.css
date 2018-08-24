@@ -106,14 +106,16 @@ p{
   height: 450px;
 }
 
-#result-container{
+/*#result-container{
   background-color:#795772;
   padding-top:50px;
   padding-bottom:50px;
   margin-left:50px;
   border-width:1px;
   border-radius:10px;
-}
+}*/
+
+
 /* END HOME PAGE */
 
 
@@ -207,30 +209,30 @@ p{
   /* Body content */
   h1
   {
-    font-size: 5vw;
+    font-size: 30px;
   }
+  
   p
   {
-    font-size: 3.5vw;
+    font-size: 20px;
   }
 
   /* Main content */ 
-  .jumbotron, .section{
-    min-height: 55vw;
-  }
-
   #jumbotron-content{
     margin-top:25px;
   }
 
   #jumbotron-content h1{
-    font-size: 7vw;
+    font-size: 45px;
   }
 
   #jumbotron-content p{
-    font-size: 4vw;
+    font-size: 30px;
   }
 
+  #result-container{
+    min-width:325px;
+  }
   /* Footer */
   .small-section{
     min-height:25vw;
@@ -246,6 +248,7 @@ p{
   {
     font-size: 22px;
   }
+
   p
   {
     font-size: 18px;
